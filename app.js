@@ -11,6 +11,9 @@ function matchBeers() {
   var url = 'https://api.punkapi.com/v2/beers?food=' + input;
   $.get(url)
     .then(function(data) {
+      if (data.length === 0) {
+        alert("FOODY NO GOODY, try again");
+      }
       for (var i = 0; i < data.length; i++) {
         $('.beerDisplay').append(
           '<div class="col s12, m6, l4">' +

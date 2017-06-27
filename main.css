@@ -11,6 +11,7 @@ main {
 .logo {
   color: rgba(255,255,255,0.8);
   margin-left: .5em;
+  align-self: flex-start;
 }
 
 .about {
@@ -29,4 +30,19 @@ main {
 .getFood {
   display: flex;
   align-items: center;
+}
+
+.logos {
+  display: flex;
+}
+
+.plus-logo {
+  width: 130px;
+  height: 115px;
+  /*margin-left: 2%;*/
+}
+
+.images {
+  display: flex;
+  justify-content: flex-end;
 }

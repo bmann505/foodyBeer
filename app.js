@@ -5,6 +5,7 @@ $(document).ready(function() {
 })
 
 function matchBeers() {
+  $('.beerDisplay').empty();
   var input = $('#foodInput').val();
   input = input.replace(/ /, '_').toLocaleLowerCase();
   var url = 'https://api.punkapi.com/v2/beers?food=' + input;

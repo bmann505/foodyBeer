@@ -4,30 +4,6 @@ $(document).ready(function() {
   $submit.click(matchBeers);
 })
 
-// function matchBeers() {
-//   var input = $('#foodInput').val();
-//   input = input.replace(/ /, '_').toLowerCase();
-//   var url = 'https://api.punkapi.com/v2/beers?food=' + input;
-//   $.get(url)
-//     .then(function(data) {
-//       for (var i = 0; i < data.length; i++) {
-//         $('.beerDisplay').append(
-//           '<div class="col s12, m6, l4">' +
-//           '<h5 class="header">' + data[i].name + '</h5>' +
-//           '<div class="card-image">' +
-//           '<img width="50px" height="100px" src="' + data[i].image_url + '" alt="beer label image">' +
-//           '</div>' +
-//           '<div class="card-stacked">' +
-//           '<div class="card-content">' +
-//           '<p>' + data[i].description + '</p>' +
-//           '</div>' +
-//           '</div>' +
-//           '</div>'
-//         )
-//       }
-//     })
-// }
-
 function matchBeers() {
   var input = $('#foodInput').val();
   input = input.replace(/ /, '_').toLocaleLowerCase();

@@ -46,3 +46,11 @@ main {
   display: flex;
   justify-content: flex-end;
 }
+
+input#foodInput.validate {
+  border-bottom: 1px solid #ff7043;
+  box-shadow: 0 1px 0 0 #ff7043;
+}
+label.active {
+  color: #ff7043 !important;
+}

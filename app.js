@@ -17,7 +17,7 @@ function matchBeers() {
       for (var i = 0; i < data.length; i++) {
         $('.beerDisplay').append(
           '<div class="col s12, m6, l4">' +
-          '<div class="card small" style="overflow: scroll;">' +
+          '<div class="card" style="overflow: scroll;">' +
           '<div class="card-image waves-effect waves-block waves-light">' +
           '<img height="100px" width="50px" class="activator" src="' + data[i].image_url + '" style="width: 55px; margin-left: 1em; margin-top: .5em;" alt="beer label image">' +
           '</div>' +

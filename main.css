@@ -37,7 +37,7 @@ main {
 }
 
 .plus-logo {
-  width: 130px;
+  width: 175px;
   height: 115px;
   /*margin-left: 2%;*/
 }
@@ -53,4 +53,14 @@ input#foodInput.validate {
 }
 label.active {
   color: #ff7043 !important;
+}
+. button {
+  display: flex;
+}
+.foodBtn {
+  justify-content: flex-start;
+}
+
+.clearBtn {
+  justify-content: flex-end;
 }

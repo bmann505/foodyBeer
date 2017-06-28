@@ -1,7 +1,9 @@
 $(document).ready(function() {
   $submit = $('.foodBtn');
+  $clear = $('.clearBtn');
 
   $submit.click(matchBeers);
+  $clear.click(clearBeers);
 })
 
 function matchBeers() {
@@ -32,4 +34,9 @@ function matchBeers() {
         )
       }
     })
+}
+
+function clearBeers() {
+  $('.beerDisplay').empty();
+  $('#foodInput').val("");
 }

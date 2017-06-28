@@ -39,7 +39,6 @@ main {
 .plus-logo {
   width: 175px;
   height: 115px;
-  /*margin-left: 2%;*/
 }
 
 .images {
@@ -58,9 +57,14 @@ label.active {
   display: flex;
 }
 .foodBtn {
-  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 .clearBtn {
-  justify-content: flex-end;
+  align-self: flex-end;
 }
+
+/*.card {
+display: flex;
+flex-direction: inherit;
+}*/

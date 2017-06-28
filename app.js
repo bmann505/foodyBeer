@@ -19,6 +19,7 @@ function matchBeers() {
       for (var i = 0; i < data.length; i++) {
         $('.beerDisplay').append(
           '<div class="col s12, m6, l4">' +
+<<<<<<< HEAD
           '<div class="card medium" style="overflow: scroll;">' +
           '<div class="card-image waves-effect waves-block waves-light">' +
           '<img height="200px" width="100px" class="activator" src="' + data[i].image_url + '" style="width: 55px; margin-left: 1em; margin-top: .5em;" alt="beer label image">' +
@@ -29,6 +30,20 @@ function matchBeers() {
           '</div>' +
           '<div class="card-reveal">' +
           '<span class="card-title grey-text text-darken-4">' + '<strong>' + data[i].name + '</strong>' + '<i class="material-icons right">' + 'close' + '</i>' + '</span>' +
+=======
+          '<div class="card small" style="overflow: scroll;">' +
+          '<div class="card-image waves-effect waves-block waves-light">' +
+          '<img height="120px" width="60px" class="activator" src="' + data[i].image_url + '" style="width: 55px; margin-left: 1em; margin-top: .5em;" alt="beer label image">' +
+          '</div>' +
+          '<div class="title">' +
+          '<span class="card-title activator grey-text text-darken-4">' + data[i].name + '</span>' +
+          '</div>' +
+          '<div class="card-content">' +
+          '<span class="activator grey-text text-darken-4">' + data[i].food_pairing[0] + '<br>' + data[i].food_pairing[1] + '<br>' + data[i].food_pairing[2] + '</span>' +
+          '</div>' +
+          '<div class="card-reveal">' +
+          '<span class="card-title grey-text text-darken-4">' + data[i].name + '<i class="material-icons right">' + 'X' + '</i>' + '</span>' +
+>>>>>>> flex-cards
           '<p>' + data[i].description + '</p>' +
           '</div>' +
           '</div>'

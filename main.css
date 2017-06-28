@@ -64,3 +64,21 @@ label.active {
 .clearBtn {
   justify-content: flex-end;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.title {
+  align-self: center;
+}
+
+.card-title {
+  font-weight: bold !important;
+}
+.card-image {
+  margin-left: 2em;
+}

@@ -64,12 +64,6 @@ label.active {
   align-self: flex-end;
 }
 
-<<<<<<< HEAD
-/*.card {
-display: flex;
-flex-direction: inherit;
-}*/
-=======
 .card {
   display: flex;
   flex-direction: column;
@@ -85,6 +79,5 @@ flex-direction: inherit;
   font-weight: bold !important;
 }
 .card-image {
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
->>>>>>> flex-cards

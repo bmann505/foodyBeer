@@ -74,11 +74,35 @@ label.active {
 
 .title {
   align-self: center;
+  color: #ff7043;
 }
 
 .card-title {
   font-weight: bold !important;
+  color: #ff7043 !important;
 }
 .card-image {
   margin-left: 1.5em;
+}
+.modal-image {
+  float: left;
+  margin-right: 2em;
+}
+.modal-pairing {
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 2em;
+}
+.modal-title {
+  text-align: center;
+  color: #ff7043;
+}
+.modal-action {
+  color: #ff7043;
+}
+.modal-description {
+  margin-left: 2em;
+}
+h6 {
+  text-decoration: underline;
 }

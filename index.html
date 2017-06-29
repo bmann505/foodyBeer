@@ -35,12 +35,34 @@
       <div class="row beerDisplay">
       </div>
     </section>
+    <section class="rotating">
+      <a class="waves-effect waves-orange btn-flat rotate" href="#modal1">Rotating Tap</a>
+      <div id="modal1" class="modal modal-fixed-footer">
+      </div>
+    </section>
+    <section class="contact">
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <label for="first-name">First Name: </label>
+          <input id="first-name" type="text" name="first-name" value="">
+          <label for="last-name">Last Name: </label>
+          <input id="last-name" type="text" name="last-name" value="">
+          <label for="comment">Comment: </label>
+          <textarea id="comment" name="comment" rows="16" cols="80"></textarea>
+          <label for="email">email: </label>
+          <input id="email" type="email" name="email" value="">
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer deep-orange lighten-1">
     <div class="footer-copyright">
       <div class="container">
         © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <a class="grey-text text-lighten-4 right" href="#modal2">Contact Us</a>
       </div>
     </div>
   </footer>

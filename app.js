@@ -3,10 +3,13 @@ $(document).ready(function() {
   $submit = $('.foodBtn');
   $clear = $('.clearBtn');
   $rotate = $('.rotate');
+  $ok = $('.modal-close');
 
   $submit.click(matchBeers);
   $clear.click(clearBeers);
+  $ok.click(clearModal);
   $rotate.click(randomTap);
+
 })
 
 function matchBeers() {
@@ -48,4 +51,29 @@ function matchBeers() {
 function clearBeers() {
   $('.beerDisplay').empty();
   $('#foodInput').val("");
+}
+
+function randomTap() {
+  $.get('https://api.punkapi.com/v2/beers/random')
+    .then(function(data) {
+      clearModal();
+      $('#modal1').append(
+        '<div class="modal-content">' +
+        '<h4 class="modal-title">' + data[0].name + '</h4>' +
+        '<img height="275px" width="100px" class="activator modal-image" src="' + data[0].image_url + '" style="margin-left: 1em; margin-top: .5em;" alt="beer label image">' +
+        '<h6>' + 'Food Pairing' + '</h6>' +
+        '<p class="modal-pairing">' + data[0].food_pairing[0] + '<br>' + data[0].food_pairing[1] + '<br>' + data[0].food_pairing[2] + '</p>' +
+        '<h6>' + 'Description' + '</h6>' +
+        '<p class="modal-description">' + data[0].description + '</p>' +
+        '</div>' +
+        '<div class="modal-footer">' +
+        '<a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">Ok</a>' +
+        '</div>'
+      )
+    })
+}
+// randomTap();
+
+function clearModal() {
+  $('#modal1').html("");
 }

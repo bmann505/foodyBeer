@@ -105,4 +105,24 @@ label.active {
 }
 h6 {
   text-decoration: underline;
+  font-weight: bold;
+}
+.foodBtn,
+.clearBtn {
+  border: 1px solid #ff7043;
+  border-radius: 50%;
+}
+
+.rotate {
+  border: 1px solid #ff7043;
+  margin-left: 5%;
+  border-radius: 50%;
+}
+
+.pairings {
+  font-style: italic;
+}
+
+.card-content {
+  font-style: italic;
 }

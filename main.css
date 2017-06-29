@@ -69,6 +69,7 @@ label.active {
   flex-direction: column;
   justify-content: center;
   align-items: inherit;
+  border: 2px solid #ff7043;
 }
 
 .title {

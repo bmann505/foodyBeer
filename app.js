@@ -1,13 +1,17 @@
 $(document).ready(function() {
+  $('.modal').modal();
   $submit = $('.foodBtn');
   $clear = $('.clearBtn');
+  $rotate = $('.rotate');
 
   $submit.click(matchBeers);
   $clear.click(clearBeers);
+  $rotate.click(randomTap);
 })
 
 function matchBeers() {
   $('.beerDisplay').empty();
+  $('.random').empty();
   var input = $('#foodInput').val();
   input = input.replace(/ /, '_').toLocaleLowerCase();
   var url = 'https://api.punkapi.com/v2/beers?food=' + input;
@@ -15,6 +19,7 @@ function matchBeers() {
     .then(function(data) {
       if (data.length === 0) {
         alert("FOODY NO GOODY, try again");
+        $('#foodInput').val("");
       }
       for (var i = 0; i < data.length; i++) {
         $('.beerDisplay').append(

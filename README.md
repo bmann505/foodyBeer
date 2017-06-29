@@ -1,38 +1,37 @@
-#FoodyBeer
+# FoodyBeer
 
 FoodyBeer is an application designed to match meals or food ingredients to beers. It is intended for food-lovers who enjoy pairing their meals with fine-crafted beers but aren't sure where to get started.
 
-#Getting Started
+# Getting Started
 
 fork and clone this repo to your local machine via github
 
 
-#Prerequisites
+# Prerequisites
 
 
-#Running the tests
+# Running the tests
 
 
-#Deployment
+# Deployment
 
 
-#Built With
+# Built With
 
 * Materialize - CSS framework Used
 * jQuery - javascript library
 
-#Contributing
+# Contributing
 
 
-#Versioning
+# Versioning
 
 
-#Authors
+# Authors
 
 Brian Mann - Initial deployment
 
-#License
+# License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
-#Acknowledgments
+# Acknowledgments

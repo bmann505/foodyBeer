@@ -115,8 +115,9 @@ h6 {
 
 .rotate {
   border: 1px solid #ff7043;
-  margin-left: 5%;
   border-radius: 50%;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 .pairings {
